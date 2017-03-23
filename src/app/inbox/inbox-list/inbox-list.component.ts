@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from '../../core/requests/request.service';
 import { Request } from '../../core/requests/request.model';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-    selector:"request-list",
-    templateUrl:"./request-list.component.html",
-    styleUrls: ['./request-list.component.css']
+    selector:"inbox-list",
+    templateUrl:"./inbox-list.component.html",
+    styleUrls: ['./inbox-list.component.css']
 })
-export class RequestListComponent implements OnInit{
+export class InboxListComponent implements OnInit{
     
     requests: Request[];
     errorMessage: string;
 
-    constructor(private requestService: RequestService){
+    constructor(private requestService: RequestService, private router: Router){
     }
 
     ngOnInit(){
@@ -21,6 +22,10 @@ export class RequestListComponent implements OnInit{
             requests => this.requests = requests,
             error => this.errorMessage = <any>error
         );
+    }
+
+    navigateToRequest(id:any){
+        this.router.navigate(["inbox/"+id])
     }
 
 

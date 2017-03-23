@@ -20,12 +20,14 @@
     "@angular/platform-browser": "^2.4.0",
     "@angular/platform-browser-dynamic": "^2.4.0",
     "@angular/router": "^3.4.0",
-    "core-js": "^2.4.1",
-    "rxjs": "5.2.0",
-    "zone.js": "^0.7.6",  
+    "bootstrap":"^3.10.10",
     "angular2-jwt": "0.1.28",
+    "core-js": "^2.4.1",
     "jwt-decode": "^2.1.0",
-    "local-storage":""
+    "local-storage": "",
+    "ng2-bootstrap": "^1.4.2",
+    "rxjs": "5.2.0",
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0-rc.0",

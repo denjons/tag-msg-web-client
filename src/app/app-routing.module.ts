@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inbox', },
-  { path: 'inbox', loadChildren: "app/requests/requests.module#RequestsModule"}
+  { path: 'inbox', loadChildren: "app/inbox/inbox.module#InboxModule"}
   ,{ path: 'outbox', loadChildren: "app/outbox/outbox.module#OutboxModule"}
   ,{ path: 'msg', loadChildren: "app/msg/msg.module#MSGModule"}
   //{ path: '**', pathMatch: 'full', component: PageNotFoundComponent },

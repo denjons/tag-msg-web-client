@@ -1,0 +1,8 @@
+<article>
+    <ul>
+        <li *ngFor="let request of requests">
+            <request-item [request] = "request" (click)="navigateToRequest(request.id)"></request-item>
+        </li>
+    </ul>
+</article>
+

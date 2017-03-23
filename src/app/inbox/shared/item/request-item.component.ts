@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { Request } from '../../../core/requests/request.model';
 
 @Component({
-    selector:"request-button",
-    templateUrl:"./request-button.component.html",
-    styleUrls: ['./request-button.component.css']
+    selector:"request-item",
+    templateUrl:"./request-item.component.html",
+    styleUrls: ['./request-item.component.css']
 })
-export class RequestButtonComponent{
+export class RequestItemComponent{
     @Input() request: Request;
     constructor(){}
 }

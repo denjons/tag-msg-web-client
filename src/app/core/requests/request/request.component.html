@@ -1,9 +1,9 @@
-<article class="tm-flex-box tm-flex-rows">
-    <div class="tm-item">
+<article >
+    <div>
         
         <h2>{{request.content}}</h2>
         <div>
-           <div class="tag" *ngFor="let tag of request.tags">{{tag}}</div>
+           <div *ngFor="let tag of request.tags">{{tag}}</div>
         </div>
         <span>{{request.date}}</span>    
     </div>

@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { RequestService } from '../core/requests/request.service';
 
 @Component({
-    selector:"requests",
+    selector:"inbox",
     template:"<router-outlet></router-outlet>",
     providers:[RequestService]
 })
-export class RequestsComponent{
+export class InboxComponent{
     constructor(){}
 }

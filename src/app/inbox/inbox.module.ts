@@ -6,10 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { RequestModule } from '../core/requests/request.module';
 
 // routing
-import { RequestsRoutingModule, routableComponents } from './requests-routing.module';
+import { InboxRoutingModule, routableComponents } from './inbox-routing.module';
 
 // components
-import { RequestButtonComponent } from './shared/button/request-button.component';
+import { RequestItemComponent } from './shared/item/request-item.component';
 
 // services
 import { RequestService } from '../core/requests/request.service';
@@ -19,14 +19,14 @@ import '../core/rxjs-extensions';
 
 @NgModule({
   declarations: [
-    routableComponents, RequestButtonComponent
+    routableComponents, RequestItemComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     RequestModule,
-    RequestsRoutingModule
+    InboxRoutingModule
   ],
   providers: [RequestService]
 })
-export class RequestsModule { }
+export class InboxModule { }
