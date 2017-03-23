@@ -7,6 +7,7 @@ import { ResponsesModule } from '../responses/responses.module';
 
 // components
 import { RequestComponent } from './request/request.component';
+import { RequestItemComponent } from './item/request-item.component';
 
 
 
@@ -16,7 +17,7 @@ import { RequestComponent } from './request/request.component';
     FormsModule,
     ResponsesModule
   ],
-  exports:[RequestComponent],
-  declarations:[RequestComponent]
+  exports:[RequestComponent, RequestItemComponent],
+  declarations:[RequestComponent, RequestItemComponent]
 })
 export class RequestModule { }

@@ -9,7 +9,6 @@ import { RequestModule } from '../core/requests/request.module';
 import { OutboxRoutingModule, routableComponents } from './outbox-routig.module';
 
 // components
-import { OutboxButtonComponent } from './shared/button/outbox-button.component';
 import { OutboxListComponent } from './outbox-list/outbox-list.component';
 
 // services
@@ -20,7 +19,7 @@ import '../core/rxjs-extensions';
 
 @NgModule({
   declarations: [
-    routableComponents, OutboxButtonComponent, OutboxListComponent
+    routableComponents, OutboxListComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +27,7 @@ import '../core/rxjs-extensions';
     RequestModule,
     OutboxRoutingModule
   ],
-  exports:[OutboxButtonComponent, OutboxListComponent],
+  exports:[ OutboxListComponent],
   providers: [RequestService]
 })
 export class OutboxModule { }

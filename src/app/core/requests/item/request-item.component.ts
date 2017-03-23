@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Request } from '../../../core/requests/request.model';
 
 @Component({
@@ -8,5 +8,10 @@ import { Request } from '../../../core/requests/request.model';
 })
 export class RequestItemComponent{
     @Input() request: Request;
+    @Output() requestClick = new EventEmitter();
     constructor(){}
+
+    navigateParentEvent(){
+        this.requestClick.emit(this.request);
+    }
 }

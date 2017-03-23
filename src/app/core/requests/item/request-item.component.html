@@ -1,0 +1,12 @@
+<div>
+    <article>
+       <!-- <a[routerLink]="['/inbox', request.id]" href="">{{request.content}}</a> -->
+       <h3 (click)="navigateParentEvent()">{{request.content}}</h3>
+        <ul class="list-unstyled list-inline">
+            <li *ngFor="let tag of request.tags">{{tag}}</li>
+        </ul>
+     </article>
+     <div>
+        <span>{{request.date}}</span>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from '../../core/requests/request.service';
 import { Request } from '../../core/requests/request.model';
-import { ActivatedRoute, Router } from '@angular/router';
+import {  Router } from '@angular/router';
 
 @Component({
     selector:"inbox-list",
@@ -24,8 +24,8 @@ export class InboxListComponent implements OnInit{
         );
     }
 
-    navigateToRequest(id:any){
-        this.router.navigate(["inbox/"+id])
+    navigateToRequest(request:Request){
+        this.router.navigate(["inbox/"+request.id])
     }
 
 

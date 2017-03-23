@@ -8,9 +8,6 @@ import { RequestModule } from '../core/requests/request.module';
 // routing
 import { InboxRoutingModule, routableComponents } from './inbox-routing.module';
 
-// components
-import { RequestItemComponent } from './shared/item/request-item.component';
-
 // services
 import { RequestService } from '../core/requests/request.service';
 
@@ -19,7 +16,7 @@ import '../core/rxjs-extensions';
 
 @NgModule({
   declarations: [
-    routableComponents, RequestItemComponent
+    routableComponents
   ],
   imports: [
     CommonModule,

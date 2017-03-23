@@ -15,7 +15,6 @@ export class MSGWidgetComponent implements OnInit{
     request: Request;
 
     constructor(){
-        //this.request = new Request();
     }
 
     ngOnInit(){

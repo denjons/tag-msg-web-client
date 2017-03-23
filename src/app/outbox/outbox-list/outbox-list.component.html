@@ -1,7 +1,7 @@
 <article>
-    <ul>
+    <ul lass="list-unstyled">
         <li *ngFor="let request of requests">
-            <outbox-button [request] = "request"></outbox-button>
+            <request-item [request] = "request" (requestClick)="navigateToRequest($event)"></request-item>
         </li>
     </ul>
 </article>
