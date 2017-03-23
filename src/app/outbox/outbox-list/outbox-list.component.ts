@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class OutboxListComponent{
     
     @Input() requests: Request[];
+    
     errorMessage: string;
 
     constructor(private router: Router){
